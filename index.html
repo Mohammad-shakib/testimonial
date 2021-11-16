@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Testimonial</h1>
+        <div class="container">
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </div>
+            <div class="testimonial">
+            <div class="slide-row" id="slide">
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, magnam tempora numquam placeat ad officiis doloribus sapiente. Fugiat temporibus iusto molestiae ipsum eius asperiores, dolorum possimus debitis qui aliquam eaque.</p>
+                        <h3>Sarah</h3>
+                        <p>Zara Inc.</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="img/picture-1.jpg" alt="img/picture-1.jpg">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum facere architecto similique magni, sint voluptatum modi in expedita deserunt numquam.</p>
+                        <h3>Zarah</h3>
+                        <p>Sara Inc.</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="img/picture-2.jpg" alt="img/picture-2.jpg">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rem et impedit deserunt, rerum ratione.</p>
+                        <h3>Manik</h3>
+                        <p>Shakib Limited</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="img/picture-3.jpg" alt="img/picture-3.jpg">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam pariatur, explicabo nobis dicta culpa magni earum sapiente aut iure labore quia maiores nostrum dolorum assumenda?</p>
+                        <h3>Sahin</h3>
+                        <p>Author</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="img/picture-4.jpg" alt="img/picture-4.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementsByClassName('btn')
+        const slide = document.getElementById('slide')
+
+        btn[0].onclick = function(){
+            slide.style.transform = "translateX(0px)"
+        }
+        btn[1].onclick = function(){
+            slide.style.transform = "translateX(-800px)"
+        }
+        btn[2].onclick = function(){
+            slide.style.transform = "translateX(-1600px)"
+        }
+        btn[3].onclick = function(){
+            slide.style.transform = "translateX(-2400px)"
+        }
+    </script>
+
+</body>
+</html>
